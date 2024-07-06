@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+}
+nav{
+    background-color:var(--dark);
+}
+section{
+    background-color: var(--dark);
+    height: 650px;
+}
+.flex{
+    background-color: white;
+}
+.about{
+    position: relative;
+}
+.text{
+    position: absolute;
+}
+.about{
+    margin-top: 0px;
+    margin-left: 50px;
+    padding-top: 60px;
+}
+.image{
+    position: absolute;
+    left: 50%;
+}
+
+.services{
+    background-color: #eee;
+}
+/*
+.skl{
+    padding-top: 15px;
+}*/
+.btn-dark{
+    margin-left: 15px;
+}

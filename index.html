@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  
+
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  
+
+
+
+  <link href="img/favicon.ico" rel="icon">
+
+
+
+  
+
+ 
+     <!-- Icon Font Stylesheet -->
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
+     <!-- Libraries Stylesheet -->
+     <link href="lib/animate/animate.min.css" rel="stylesheet">
+     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+ 
+     <!-- Customized Bootstrap Stylesheet -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+     <!-- Template Stylesheet -->
+     <link href="css/style2.css" rel="stylesheet">
+
+
+     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   
+     <!-- Template Main CSS File -->
+     <link href="assets/css/main.css" rel="stylesheet">
+
+     <script src="dist/sweetalert.js"></script>
+     <link rel="stylesheet" href="dist/sweetalert.css">
+     <!--.......................-->
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  
+.text{
+  color: white;
+}
+p{
+  text-align: center;
+  width: 450px;
+  padding-top: 20px;
+  
+}
+.man{
+  width: 500px;
+  height: 300px;
+  transition: box-shadow 0.3s;
+}
+.man:hover{
+  box-shadow: 0 0 10px 5px  blue;
+}
+button{
+  margin-left: 40%;
+  margin-top: 5%;
+
+} 
+
+.cardy {
+      width: 450px;
+      height: 500px;
+      background-color:var(--dark);
+      opacity: 0.8;
+      perspective: 1000px;
+      border: none;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transition: transform 3s;
+      transform-style: preserve-3d;
+      background-color: var(--dark);
+    }
+
+    .cardy.flip .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .card-back {
+      /* Back side of the card */
+      transform: rotateY(180deg);
+    }
+   
+    
+    h1{
+      text-align: center;
+      padding-top: 7px;
+      color: white;
+    }
+    .services{
+    background-color: white;
+    }
+    .carousel-control-prev {
+      left: -300px; /* Adjust the value as needed */
+      
+    }
+    .carousel-control-next{
+      left: 370px;
+    }
+    .caro{
+      text-align: end;
+      margin-left: 90px;
+      color: black;
+    }
+    .con{
+      margin-left: 500px;
+      margin-top: -1.5%;
+      text-decoration: none;
+      width: 300px;
+    }
+    .con a{
+      text-decoration: none;
+      color: black;
+      padding-top: 40px;
+    }
+    .abo{
+      width: 90px;
+    }
+    .btnfl{
+      display: flex;
+      margin-right: 300px;
+    }
+  
+    h3{
+      color: black;
+      padding-top: 10px;
+      padding-left: 30px;
+
+    }
+    p{
+      width: 350px;
+      padding-left: 45px;
+      margin-top: -3%;
+    }
+    nav{
+      position: relative;
+    }
+    .svg{
+      position: absolute;
+      width: 550px;
+      height: 500px;
+    }
+    .services{
+      position: relative;
+    }
+    .cerc{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      top: 25%;
+      left: 30%;
+    }
+    .pat{
+      width: 300px;
+      margin-top: -30%;
+      margin-left: 13%;
+    }
+    .aft{
+      width: 400px;
+      height: 300px;
+      margin-top: -28%;
+      margin-left: 26%;
+    }
+    .card-img-top{
+      height: 200px;
+      
+      
+    }
+    .c1{
+      margin-right: 10px;
+    }
+    
+    .seven{
+      margin-top: -3%;
+    }
+    .progress{
+      width: 70%;
+    }
+    
+    h4{
+      text-align: center;
+      color: white;
+    }
+    .progress{
+      margin-left: 40px;
+    }
+    .cr{
+      background-color: grey;
+      
+    }
+    .card-title{
+      color: white;
+    }
+
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*
+body {
+  display: flex;
+  background: #333;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}*/
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1157 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color:white;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
+}
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: var(--dark);
+  padding: 25px 50px 30px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fafafa;
+  margin: 0;
+  background-color: grey;
+  position: absolute;
+}
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.bcon{
+  margin-left: -45%;
+}
+
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  background-color:black;/* Adjust the height to match the wave-container */
+}
+.hello{
+  color: white;
+  padding-top: 10px;
+}
+.cor{
+  background-color: blue;
+  border: none;
+}
+.cor:hover{
+  background-color: blue;
+  opacity: 0.8;
+  transition: 2s all;
+}
+   .card:hover{
+    opacity: 0.7;
+    transition: 2s all;
+   }
+   .bcon{
+    margin-top: 30px;
+   }
+   .cott{
+    background-color: #fff;
+   }
+   .hello{
+    margin-left: 16px;
+    margin-top: -2%;
+   }
+   .web{
+    margin-top: -3%;
+    margin-left: 1%;
+    font-size: 15px;
+   }
+   .par{
+    width: 400px;
+   }
+   .ctf{
+    color: black;
+    padding-left: 20px;
+   }
+   .pcen{
+    padding-left: 200px;
+    width: 900px;
+    color: darkblue;
+   }
+   .skl{
+    text-align: center;
+   }
+    .margg{
+      margin-top: 100px;
+    }
+    .hw{
+      color: black;
+    }
+    .flex{
+      display: flex;
+      flex-direction: row;
+    }
+    
+  @media(min-width:669px) and (max-width:990px){
+      .svg{
+        width: 350px;
+        margin-top: -10%;
+      }
+      .about{
+        font-size: 10px;
+      }
+      .about h2{
+        font-size: 35px;
+        margin-left: 5%;
+        margin-top: -13%;
+      }
+      .man{
+        width: 300px;
+        height: 200px;
+        margin-left: 5%;
+      }
+      .par{
+        width: 200px;
+        margin-left: -1%;
+        margin-top: -8%;
+      }
+      .web{
+        font-size: 13px;
+        margin-left: 4%;
+        margin-top: 5%;
+      }
+      nav ul{
+        gap:20px;
+        border: none;
+      }
+      ul{
+        border: none;
+      }
+      .navbar-collapse{
+        border: none;
+      }
+      h3.web{
+        font-size: 15px;
+      }
+      .btn-dark{
+        width: auto;
+        font-size: 5px;
+      
+      }
+      .navbar-brand{
+        font-size: 13px;
+      }
+      nav{
+        width: auto;
+      }
+      
+      .btn-dark{
+        margin-top: -20%;
+      }
+      section{
+        width: auto;
+      }
+      .carousel-inner img{
+        width: 200px;
+      }
+    
+    .cerc{
+      margin-left: -20%;
+      margin-top: -2%;
+    }
+    .card-title{
+      font-size: 15px;
+    }
+    .mf{
+      font-size: 10px;
+    }
+    .progress{
+      margin-left: 7%;
+    }
+    .btn-dark{
+ margin-left: 50px;
+ font-size: 20px;
+ height: 60px;
+ width: 150px;
+    }
+    .flex{
+      display: flex;
+      flex-direction: column;
+      margin-left: 250px;
+    }
+    
+    .bi-arrow-up::before{
+      margin-top: 2%;
+    }
+    .cott a{
+      display: none;
+    }
+    .cerx{
+      padding-right:31%;
+    }
+    .sklu{
+      padding-right: 55%;
+    }
+    .proj{
+      padding-right: 55%;
+    }
+    .test{
+      padding-right: 35%;
+    }
+    .aft{
+    margin-left: 400px;
+    margin-top: -35%;
+    }
+  }
+  .btn-dark{
+    margin-left: 50px;
+  }
+
+  .card-body{
+    background-color: #ffffff;
+    border: none;
+  }
+  .cr {
+  transition: transform 0.3s, box-shadow 0.5s;
+}
+
+.cr:hover {
+  transform: scale(1.18) translateZ(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.web{
+  margin-top: -5%;
+}
+.caro{
+  margin-left: 22%;
+}
+ .cr{
+  border: none;
+  
+ }
+ .card-body{
+  background-color:white ;
+ }
+ 
+.sp{
+  text-align: center;
+  margin-left: 10px;
+color: #3586ff;
+}
+.yy{
+  background-color: #fff;
+}
+.skl{
+  margin-top: -2%;
+}
+.fon{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cott{
+  background-color: #eee;
+}
+.cot{
+  background-color: #eee;
+}
+.section-header{
+  margin-top: -3.5%;
+}
+.flex{
+  margin-top: -2%;
+}
+.btn-dark{
+  margin-top: 50%;
+}
+.cv{
+  margin-top: 90%;
+}
+.t{
+  padding-top: 2%;
+  padding-left: 25%;
+}
+.cv{
+  margin-top: 9%;
+}
+.abc{
+  margin-top:45%;
+}
+.web{
+  margin-top: -2.2%;
+}
+.svg{
+  margin-top:2%;
+}
+.hello{
+  font-size: 60px;
+  margin-left: 35px;
+  margin-top: 1%;
+}
+.cv{
+  height: 50px;
+  margin-top: 50%;
+}
+.progress{
+background-color: grey;
+}
+.caa{
+  padding-right: 100px;
+}
+.rd{
+  border-radius: 16px;
+}
+.bc{
+  background-color: black;
+  color:white;
+}
+.gallery{
+  height: 500px;
+}
+.card-title{
+  color: black;
+}
+  .cor{
+    background-color: var(--dark);
+  }
+  .cerx{
+    padding-left: 300px;
+  }
+  @media(max-width:667px){
+    .aft{
+      display: none;
+    }
+    section{
+      height: 1050px;
+    }
+    .image{
+ position: absolute;
+ top: 500px;
+ 
+
+    }
+    .man{
+    margin-left: -26%;
+      width: auto;
+    }
+    .about{
+      position: relative;
+    }
+    .web{
+      font-size: 6px;
+      margin-left: -10%;
+    }
+    .hello{
+      font-size: 30px;
+    }
+    .btn-dark{
+      margin-left: 0%;
+      margin-top: 75%;
+      width: auto;
+      height: 70px;
+    }
+    .cv{
+      margin-left: 10%;
+      font-size: 12px;
+    }
+    .bcon{
+      display: none;
+    }
+  }
+  
+
+  </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-sm  navbar-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">kassem Deeb</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link abo" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certf">Certificates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">skills</a>
+              </li>  
+
+              <li class="nav-item">
+                <a class="nav-link" href="#prr">Projects</a>
+              </li> 
+
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">MyProfiles</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#linked">linkedIn</a></li>
+                  <li><a class="dropdown-item" href="#twit">twitter</a></li>
+                  <li><a class="dropdown-item" href="#face">Facebook</a></li>
+                </ul>
+              </li>
+              <li class="con"><button class="btn  btn-light bcon"><a href="./contact-form-16/index.html">Contact Us</a></button></li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img class="svg  img-fluid wow fadeInUp" src="portfolio-svgrepo-com.svg" id="about" alt="">
+
+      <section id="abtlink">
+        <div class="container mt-3">
+        <div class="about">
+        <div class="text">
+         <h2 class="hello display-3 text-white animated slideInLeft">Hello there!</h2>
+         
+         <h3 class="animated slideInLeft web">I am a web developer</h3>
+         
+          <div class="btnfl">
+          <button class="btn btn-dark btn-lg inf"  data-bs-toggle="modal" data-bs-target="#myModal">More info</button>
+        
+           
+            <button class="btn btn-dark btn-lg cv btn-primary sweet-12" onclick="showSuccessAlert()">Download CV</button>
+
+            <script>
+              function showSuccessAlert() {
+                swal({
+                  title: "Are you sure?",
+                  text: "You will not be able to recover this imaginary file!",
+                  icon: "success",
+                  buttons: {
+                    cancel: {
+                      text: "Cancel",
+                      value: null,
+                      visible: true,
+                      className: "",
+                      closeModal: true,
+                    },
+                    confirm: {
+                      text: "Success!",
+                      value: true,
+                      visible: true,
+                      className: "btn-success",
+                      closeModal: true
+                    }
+                  }
+                }).then(function(confirmed) {
+                  if (confirmed) {
+                    var link = document.createElement("a");
+                    link.href = "mycv.docx";
+                    link.setAttribute("download", "mycv.docx");
+                    link.style.display = "none";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }
+                });
+              }
+            </script>
+            
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+          
+          </div>
+        </div>
+        <div class="image">
+
+          <div class="cardy" id="myCard">
+            <div class="card-inner">
+              <div class="card-front">
+                <img  class="man img-fluid  img-thumbnail rounded-circle" src="mm.webp" alt="">
+              </div>
+              <div class="card-back">
+                <img  class="man img-fluid  img-thumbnail rounded-circle "  src="m2.webp" alt="">
+              </div>
+            </div>
+          </div>
+          
+          </div>
+
+        </div>
+        </div>
+      </section>
+      
+      <script>
+        // Get the card element by its ID
+        var card = document.getElementById("myCard");
+    
+        // Function to toggle the "flip" class
+        function flipCard() {
+          card.classList.toggle("flip");
+        }
+    
+        // Add a click event listener to the card element
+        card.addEventListener("click", flipCard);
+      </script>
+
+
+<div class="services" id="certf">
+  <div class="section-header" style="display: flex;">
+    <p class="pcen cerx" id="proos"> Certificate</p>
+    <p class="fl" style="display: none;">certificate</p>
+  </div>
+
+
+<div class="--bs-gray-500">
+
+ <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active wow fadeInUp">
+      <img src="cer.jpeg" alt="Los Angeles"  class=" img-fluid mx-auto d-block w-90 rounded " height="400px" >
+      <div class="carousel-caption">
+        <h3>University certificate</h3>
+        <p class="caro">I have earned it from LIU</p>
+      </div>
+    </div>
+    <div class="carousel-item wow fadeInUp">
+      <img src="codsoft.jpg" alt="Chicago" class=" img-fluid mx-auto d-block w-90 rounded " height="400px">
+      <div class="carousel-caption">
+        <h3>Codsoft Certificate</h3>
+        <p class="caro">i have completed an internship</p>
+      </div>
+    </div>
+    <div class="carousel-item wow fadeInUp">
+      <img src="deen1.jpg" alt="New York" class=" img-fluid  mx-auto d-block w-90 rounded " height="400px">
+      <div class="carousel-caption">
+        <h3>Dean's Honor Certificate</h3>
+        <p class="caro">offered by liu</p>
+      </div>
+    </div>
+
+    <div class="carousel-item wow fadeInUp">
+      <img src="deen3.jpg" alt="New York" class=" mx-auto d-block w-90 rounded " height="400px">
+      <div class="carousel-caption">
+        <h3>Dean's Honor Certificate</h3>
+        <p class="caro">offered by liu</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+<img class="cerc img-fluid" src="certificate-medal-svgrepo-com.svg" alt="">
+<img class="pat img-fluid" src="certificate-patent-svgrepo-com.svg" alt="">
+<img class="aft img-fluid" src="after.svg" alt="">
+
+
+</div>
+
+
+  <a href="#" class="btn btn-lg btn-primary cor btn-lg-square back-to-top"><i class="bi bi-arrow-up cor"></i></a>
+
+  <div class="container mt-3" style="background: white;" id="skills">
+  <div class="section-header">
+    <p class="pcen sklu" id="proos"> Skills</p>
+  </div>
+  <div class="row">
+    <div class="p-3 col-lg-4 col-md-11 col-sm-11  wow fadeInUp" data-wow-delay="0.3s">
+  <div class="card cr">
+    <img class="card-img-top img3" src="webp.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Web</h4>
+      <div class="progress">
+        
+        <div class="progress-bar" style="width:80%">  html 80%</div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar" style="width:70%">css 70%</div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar" style="width:50%">javascript 50%</div>
+      </div>
+      <br>
+    
+    </div>
+  </div>
+  </div>
+
+  <div class="p-3  col-sm-11 col-md-11 col-lg-4 color wow fadeInUp " data-wow-delay="0.5s">
+    <div class="card ">
+      <img class="card-img-top" src="mob.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Mobile</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width:70%">c++ 70%</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width:60%">python 60%</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width:40%">C 40%</div>
+        </div> <br>
+        
+      </div>
+    </div>
+    </div>
+
+    <div class="p-3 col-lg-4 col-sm-11 col-md-11 wow fadeInUp " data-wow-delay="0.7s">
+      <div class="card">
+        <img class="card-img-top" src="mach.jpeg" alt="Card image" style="width:100%">
+        <div class="card-body"> 
+          <h4 class="card-title mf">Machine Learning</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%">python 70%</div>
+          </div>
+          <br>
+          <div class="progress">
+            <div class="progress-bar" style="width:60%">AI 60%</div>
+          </div>
+          <br>
+          <div class="progress">
+            <div class="progress-bar" style="width:40%">logic 40%</div>
+          </div> <br>
+        
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+ <section id="gallery" class="gallery section-bg cott">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header" id="prr">
+      <p class="pcen proj" id="proos"> projects</p>
+    </div>
+
+    <div class="gallery-slider swiper">
+      <div class="swiper-wrapper align-items-center ">
+        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" 
+          href="resto.jpeg"><img src="resto.jpeg" class="img-fluid" alt=""> <span class="sp">restuarant website</span> </a></div>
+        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+           href="imgpro.webp"><img src="imgpro.webp" class="img-fluid" alt=""><span class="sp">machine learning project</span></a></div>
+        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+           href="ecco.jpeg"><img src="ecco.jpeg" class="img-fluid" alt=""><span class="sp">eccommerce project</span></a></div>
+        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" 
+          href="nnl.jpeg"><img src="nnl.jpeg" class="img-fluid" alt=""><span class="sp">nlp project</span></a></div>
+        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" 
+          href="robo.jpeg"><img src="robo.jpeg" class="img-fluid" alt=""><span class="sp">robotics projects</span></a></div>
+      
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- The Modal -->
+<div class="modal margg" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title hw">More Info</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        kassem, a dedicated computer science student, embraced coding and technology from a young age. 
+        Through rigorous coursework, internships, and extracurricular activities, she honed 
+        her skills and expanded her network. Graduating with honors,kassem seamlessly transitioned 
+        into a successful career. Continuously learning and adapting to new technologies, she made a 
+        positive impact through innovative creations. 
+        Her story exemplifies the transformative journey and endless potential of a computer science student
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn bc" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container mt-3" style="background-color: white;">
+    <span>Testamonials</span>
+    <div class="row">
+      <div class=" col-md-12 col-sm-12 col-lg-4">
+<figure class="snip1157 " >
+  <blockquote>kassem is an exceptional student who consistently demonstrates a strong 
+    understanding of the subject matter. His dedication to learning and active participation in
+     class discussions is commendable. 
+    He consistently produces high-quality work and exhibits a natural talent for problem-solving
+    <div class="arrow"></div>
+  </blockquote>
+  <img src="man2.jpeg" alt="sq-sample3" data-bs-toggle="popover" title="Instructor"
+  data-bs-content="youssef rommeih"> />
+  <div class="author">
+  </div>
+</figure>
+</div>
+<div class=" col-md-12 col-sm-12 col-lg-4">
+<figure class="snip1157 hover ">
+  <blockquote>kassem is a diligent and motivated student who consistently goes
+     above and beyond in her coursework. Her attention to detail and ability to grasp 
+     complex concepts is impressive. She actively seeks clarification when needed and consist
+    ently delivers assignments that showcase her deep understanding of the material.
+    <div class="arrow"></div>
+  </blockquote>
+  <img src="mann.jpeg" alt="sq-sample27"  data-bs-toggle="popover" title="Dean of university"
+  data-bs-content="said rammal"> />
+  <div class="author">
+  </div>
+</figure>
+</div>
+<div class=" col-md-12 col-sm-12 col-lg-4 ">
+<figure class="snip1157 ">
+  <blockquote> Kassem is an enthusiastic learner who consistently displays a strong
+     work ethic. Their creativity and out-of-the-box thinking bring a fresh perspective
+      to class discussions and projects. With their consistent improvement and eage
+    rness to take on challenges, Alex is truly a standout student
+    <div class="arrow"></div>
+  </blockquote>
+  <img src="man1.jpeg" alt="sq-sample17" data-bs-toggle="popover" title="Instructor"
+  data-bs-content="ali laban">  />
+  <div class="author">
+
+  </div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="#" id="face">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#" id="twit">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#" id="link">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#" id="">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+  </ul>
+  <p class="fp">&copy;2024 Kassem Deeb | All Rights Reserved</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
+    
+
+</body>
+</html>
